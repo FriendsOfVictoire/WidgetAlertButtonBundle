@@ -1,0 +1,24 @@
+{% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
+
+{% block content %}
+<div class="alert alert-{{ style }}">
+    {{ message|raw }}
+
+    {% if target == "ajax-modal" %}
+    {% set targetTag = 'data-toggle=' ~ target %}
+    {% else %}
+    {% set targetTag = 'target="' ~ target|default('_parent') ~ '"' %}
+    {% endif %}
+
+    {% if linkType == 'page' %}
+    <a href="{{ path('victoire_core_page_show', {'url' : page.url }) }}" {{ targetTag }} title="{{hoverTitle}}" class="btn btn-{{ size }} btn-{{ style }}">
+    {% elseif linkType == 'url'  %}
+        <a href="{{link}}" {{ targetTag }} title="{{hoverTitle}}" class="btn btn-{{ size }} btn-{{ style }}">
+    {% elseif linkType == 'route'  %}
+        <a href="{{ path(route, routeParameters)}}" {{ targetTag }} title="{{hoverTitle}}" class="btn btn-{{ size }} btn-{{ style }}">
+    {% endif %}
+        {{ title|raw }}
+    </a>
+
+</div>
+{% endblock content %}

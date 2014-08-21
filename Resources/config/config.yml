@@ -1,0 +1,11 @@
+victoire_core:
+    widgets:
+        AlertButton:
+            class: "Victoire\\Widget\\AlertButtonBundle\\Entity\\WidgetAlertButton"
+            name: AlertButton
+            parent: ButtonWidget
+jms_translation:
+    configs:
+        victoire_alertbutton_bundle:
+            dirs: ["@VictoireAlertButtonBundle"]
+            output_dir: "@VictoireAlertButtonBundle/Resources/translations"

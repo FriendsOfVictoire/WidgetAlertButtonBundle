@@ -1,0 +1,14 @@
+services:
+    victoire_core.widget_alertbutton_content_resolver:
+        class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: AlertButton }
+    #alias to the entity
+    victoire.widget.alertbutton:
+        class: Victoire\Widget\AlertButtonBundle\Entity\WidgetAlertButton
+
+    #alias to the form
+    victoire.widget.form.alertbutton:
+        class: Victoire\Widget\AlertButtonBundle\Form\WidgetAlertButtonType
+        tags:
+            - { name: form.type , alias: victoire_widget_form_alertbutton }
