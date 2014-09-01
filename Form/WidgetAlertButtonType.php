@@ -6,7 +6,6 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Widget\ButtonBundle\Form\WidgetButtonType;
 
-
 /**
  * WidgetAlertButton form type
  */
@@ -19,13 +18,15 @@ class WidgetAlertButtonType extends WidgetButtonType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('message', 'redactor', array(
-            'label' => 'widget_alertbutton.form.message.label'
-        ));
         parent::buildForm($builder, $options);
+        $builder->add('message', 'textarea', array(
+            'label' => 'widget_alertbutton.form.message.label',
+            'attr' => array(
+                'class' => 'redactor'
+            )
+        ));
 
     }
-
 
     /**
      * bind form to WidgetAlertButton entity
@@ -37,7 +38,7 @@ class WidgetAlertButtonType extends WidgetButtonType
 
         $resolver->setDefaults(array(
             'data_class'         => 'Victoire\Widget\AlertButtonBundle\Entity\WidgetAlertButton',
-            'widget'             => 'alertbutton',
+            'widget'             => 'AlertButton',
             'translation_domain' => 'victoire'
         ));
     }

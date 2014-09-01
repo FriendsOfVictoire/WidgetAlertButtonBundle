@@ -28,9 +28,8 @@ class WidgetAlertButton extends WidgetButton
      */
     public function __toString()
     {
-        return '#'.$this->id.' - '.$this->id;
+        return 'Alert button #'.$this->id;
     }
-
 
     /**
      * Set message

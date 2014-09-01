@@ -1,4 +1,10 @@
 {% extends 'VictoireCoreBundle:Widget:new.html.twig' %}
+
 {% block form %}
-    {{ parent() }}
+{{ parent() }}
+<script type="text/javascript">
+    $vic(document).ready(function(){
+        initRedactor('.redactor');
+    });
+</script>
 {% endblock form %}
