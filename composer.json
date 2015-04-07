@@ -15,7 +15,7 @@
         "php"                      : ">=5.3.3",
         "symfony/framework-bundle" : "~2.3",
         "victoire/victoire"        : ">=0.1.4",
-        "victoire/button-widget"   : "dev-master"
+        "appventus/button-widget"   : "dev-master"
     },
     "autoload": {
         "psr-0": { "Victoire\\Widget\\AlertButtonBundle": "" }
