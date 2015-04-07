@@ -1,5 +1,5 @@
 {
-    "name": "victoire/alertbutton-widget",
+    "name": "appventus/alertbutton-widget",
     "type": "symfony-bundle",
     "description": "Victoire Cms AlertButton widget",
     "keywords": ["cms", "victoire", "AlertButton", "widget"],
