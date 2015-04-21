@@ -1,5 +1,5 @@
 {
-    "name": "appventus/alertbutton-widget",
+    "name": "friendsofvictoire/alertbutton-widget",
     "type": "symfony-bundle",
     "description": "Victoire Cms AlertButton widget",
     "keywords": ["cms", "victoire", "AlertButton", "widget"],
@@ -15,7 +15,7 @@
         "php"                      : ">=5.3.3",
         "symfony/framework-bundle" : "~2.3",
         "victoire/victoire"        : ">=0.1.4",
-        "appventus/button-widget"   : "dev-master"
+        "friendsofvictoire/button-widget"   : "dev-master"
     },
     "autoload": {
         "psr-0": { "Victoire\\Widget\\AlertButtonBundle": "" }
