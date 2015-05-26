@@ -1,12 +1,19 @@
-Victoire CMS AlertButton Bundle
+##Victoire's AlertButton Bundle
 ============
 
-Need to add a alertbutton in a victoire cms website ?
+Need to add an alert button in your Victoire website ?
 
-First you need to have a valid Symfony2 Victoire edition.
-Then you just have to run the following composer command :
+#Set Up Victoire
+
+If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
+
+#Install the AlertBundle Button :
+
+Run the following composer command :
 
     php composer.phar require victoire/alertbutton-widget
+
+#Reminder
 
 Do not forget to add the bundle in your AppKernel !
 
