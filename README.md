@@ -7,7 +7,7 @@ Need to add an alert button in your Victoire website ?
 
 If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
 
-#Install the AlertBundle Button :
+#Install the AlertButton Bundle :
 
 Run the following composer command :
 
