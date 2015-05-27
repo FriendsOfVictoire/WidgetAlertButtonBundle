@@ -3,7 +3,7 @@ victoire_core:
         AlertButton:
             class: "Victoire\\Widget\\AlertButtonBundle\\Entity\\WidgetAlertButton"
             name: AlertButton
-            parent: ButtonWidget
+            parent: Button
 jms_translation:
     configs:
         victoire_alertbutton_bundle:

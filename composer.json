@@ -1,20 +1,20 @@
 {
     "name": "friendsofvictoire/alertbutton-widget",
     "type": "symfony-bundle",
-    "description": "Victoire Cms AlertButton widget",
-    "keywords": ["cms", "victoire", "AlertButton", "widget"],
-    "homepage": "http://appventus.com",
+    "description": "Victoire AlertButton widget",
+    "keywords": ["DCMS", "victoire", "AlertButton", "widget", "FriendsofVictoire", "Dynamic", "CMS"],
+    "homepage": "http://victoire.io",
     "license": "MIT",
     "authors": [
         {
-            "name": "hyukchan",
-            "email": "hyukchan@appventus.com"
+            "name": "Team Victoire",
+            "email": "contact@victoire.io"
         }
     ],
     "require": {
         "php"                      : ">=5.3.3",
         "symfony/framework-bundle" : "~2.3",
-        "victoire/victoire"        : ">=0.1.4",
+        "victoire/victoire"        : ">=1.0.0",
         "friendsofvictoire/button-widget"   : "dev-master"
     },
     "autoload": {
