@@ -8,11 +8,11 @@
     <body>
       <trans-unit resname="widget.alertbutton.new.action.label">
         <source>widget.alertbutton.new.action.label</source>
-        <target>Bouton / Alerte</target>
+        <target>Bouton d'alerte</target>
       </trans-unit>
       <trans-unit resname="modal.form.widget.type.alertbutton.label">
         <source>modal.form.widget.type.alertbutton.label</source>
-        <target>Bouton / Alerte</target>
+        <target>Bouton d'alerte</target>
       </trans-unit>
       <trans-unit resname="widget_alertbutton.form.message.label">
         <source>widget_alertbutton.form.message.label</source>
