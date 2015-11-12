@@ -1,11 +1,12 @@
 <?php
+
 namespace Victoire\Widget\AlertButtonBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Victoire\Widget\ButtonBundle\Entity\WidgetButton;
 
 /**
- * WidgetAlertButton
+ * WidgetAlertButton.
  *
  * @ORM\Table("vic_widget_alertbutton")
  * @ORM\Entity
@@ -22,9 +23,9 @@ class WidgetAlertButton extends WidgetButton
     /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle)
-     * //TODO Check the generated value and make it more consistent
+     * //TODO Check the generated value and make it more consistent.
      *
-     * @return String
+     * @return string
      */
     public function __toString()
     {
@@ -32,7 +33,7 @@ class WidgetAlertButton extends WidgetButton
     }
 
     /**
-     * Set message
+     * Set message.
      *
      * @param string $message
      */
@@ -44,7 +45,7 @@ class WidgetAlertButton extends WidgetButton
     }
 
     /**
-     * Get message
+     * Get message.
      *
      * @return string
      */
@@ -52,5 +53,4 @@ class WidgetAlertButton extends WidgetButton
     {
         return $this->message;
     }
-
 }

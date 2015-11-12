@@ -1,25 +1,40 @@
 {
-    "name": "friendsofvictoire/alertbutton-widget",
-    "type": "symfony-bundle",
-    "description": "Victoire AlertButton widget",
-    "keywords": ["DCMS", "victoire", "AlertButton", "widget", "FriendsofVictoire", "Dynamic", "CMS"],
-    "homepage": "http://victoire.io",
-    "license": "MIT",
-    "authors": [
+    "name"             : "friendsofvictoire/alertbutton-widget",
+    "type"             : "symfony-bundle",
+    "description"      : "Victoire AlertButton widget",
+    "keywords"         : [
+        "DCMS",
+        "victoire",
+        "AlertButton",
+        "widget",
+        "FriendsofVictoire",
+        "Dynamic",
+        "CMS"
+    ],
+    "homepage"         : "http://victoire.io",
+    "license"          : "MIT",
+    "authors"          : [
         {
-            "name": "Team Victoire",
+            "name" : "Team Victoire",
             "email": "contact@victoire.io"
         }
     ],
-    "require": {
-        "php"                      : ">=5.3.3",
-        "symfony/framework-bundle" : "~2.3",
-        "victoire/victoire"        : ">=1.0.0",
-        "friendsofvictoire/button-widget"   : "dev-master"
+    "require"          : {
+        "php"                            : ">=5.3.3",
+        "symfony/framework-bundle"       : "~2.3",
+        "victoire/victoire"              : ">=1.0.0",
+        "friendsofvictoire/button-widget": "1.3.x-dev"
     },
-    "autoload": {
-        "psr-0": { "Victoire\\Widget\\AlertButtonBundle": "" }
+    "autoload"         : {
+        "psr-0": {
+            "Victoire\\Widget\\AlertButtonBundle": ""
+        }
     },
     "minimum-stability": "dev",
-    "target-dir": "Victoire/Widget/AlertButtonBundle"
+    "target-dir"       : "Victoire/Widget/AlertButtonBundle",
+    "extra"            : {
+        "branch-alias": {
+            "dev-master": "1.3.x-dev"
+        }
+    }
 }
