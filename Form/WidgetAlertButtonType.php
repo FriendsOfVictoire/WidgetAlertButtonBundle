@@ -7,44 +7,46 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Widget\ButtonBundle\Form\WidgetButtonType;
 
 /**
- * WidgetAlertButton form type
+ * WidgetAlertButton form type.
  */
 class WidgetAlertButtonType extends WidgetButtonType
 {
     /**
-     * define form fields
+     * define form fields.
+     *
      * @param FormBuilderInterface $builder
+     *
      * @param array $options
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         parent::buildForm($builder, $options);
-        $builder->add('message', 'textarea', array(
+        $builder->add('message', 'textarea', [
             'label' => 'widget_alertbutton.form.message.label',
-            'attr' => array(
-                'class' => 'redactor'
-            )
-        ));
-
+            'attr'  => [
+                'class' => 'redactor',
+            ],
+        ]);
     }
 
     /**
-     * bind form to WidgetAlertButton entity
+     * bind form to WidgetAlertButton entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         parent::setDefaultOptions($resolver);
 
-        $resolver->setDefaults(array(
+        $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\AlertButtonBundle\Entity\WidgetAlertButton',
             'widget'             => 'AlertButton',
-            'translation_domain' => 'victoire'
-        ));
+            'translation_domain' => 'victoire',
+        ]);
     }
 
     /**
-     * get form name
+     * get form name.
      *
      * @return string The form name
      */
