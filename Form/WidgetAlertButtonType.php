@@ -2,8 +2,9 @@
 
 namespace Victoire\Widget\AlertButtonBundle\Form;
 
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Victoire\Widget\ButtonBundle\Form\WidgetButtonType;
 
 /**
@@ -21,7 +22,7 @@ class WidgetAlertButtonType extends WidgetButtonType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         parent::buildForm($builder, $options);
-        $builder->add('message', 'textarea', [
+        $builder->add('message', TextareaType::class, [
             'label' => 'widget_alertbutton.form.message.label',
             'attr'  => [
                 'class' => 'redactor',
@@ -30,28 +31,16 @@ class WidgetAlertButtonType extends WidgetButtonType
     }
 
     /**
-     * bind form to WidgetAlertButton entity.
-     *
-     * @param OptionsResolverInterface $resolver
+     * {@inheritdoc}
      */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(OptionsResolver $resolver)
     {
-        parent::setDefaultOptions($resolver);
+        parent::configureOptions($resolver);
 
         $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\AlertButtonBundle\Entity\WidgetAlertButton',
             'widget'             => 'AlertButton',
             'translation_domain' => 'victoire',
         ]);
-    }
-
-    /**
-     * get form name.
-     *
-     * @return string The form name
-     */
-    public function getName()
-    {
-        return 'victoire_widget_form_alertbutton';
     }
 }

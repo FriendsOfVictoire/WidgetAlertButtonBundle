@@ -11,4 +11,4 @@ services:
     victoire.widget.form.alertbutton:
         class: Victoire\Widget\AlertButtonBundle\Form\WidgetAlertButtonType
         tags:
-            - { name: form.type , alias: victoire_widget_form_alertbutton }
+            - { name: form.type }
