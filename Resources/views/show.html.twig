@@ -1,22 +1,17 @@
 {% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
 {% block content %}
+
 <div class="alert alert-{{ style }}">
     {{ message|raw }}
 
-    {% if target == "ajax-modal" %}
-    {% set targetTag = 'data-toggle=' ~ target %}
+    {% if link.target == "ajax-modal" %}
+    {% set targetTag = 'data-toggle=' ~ link.target %}
     {% else %}
-    {% set targetTag = 'target="' ~ target|default('_parent') ~ '"' %}
+    {% set targetTag = 'target="' ~ link.target|default('_parent') ~ '"' %}
     {% endif %}
 
-    {% if linkType == 'page' %}
-    <a href="{{ path('victoire_core_page_show', {'url' : page.url }) }}" {{ targetTag }} title="{{hoverTitle}}" class="btn btn-{{ size }} btn-{{ style }}">
-    {% elseif linkType == 'url'  %}
-        <a href="{{link}}" {{ targetTag }} title="{{hoverTitle}}" class="btn btn-{{ size }} btn-{{ style }}">
-    {% elseif linkType == 'route'  %}
-        <a href="{{ path(route, routeParameters)}}" {{ targetTag }} title="{{hoverTitle}}" class="btn btn-{{ size }} btn-{{ style }}">
-    {% endif %}
+    <a href="{{ vic_link_url(link.parameters) }}" title="{{hoverTitle}}" class="btn btn-{{ size }} btn-{{ style }}">
         {{ title|raw }}
     </a>
 
