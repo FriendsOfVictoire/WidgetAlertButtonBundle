@@ -8,33 +8,20 @@
         "AlertButton",
         "widget",
         "FriendsofVictoire",
-        "Dynamic",
         "CMS"
     ],
     "homepage": "http://victoire.io",
     "license": "MIT",
-    "authors": [
-        {
-            "name" : "Team Victoire",
-            "email": "contact@victoire.io"
-        }
-    ],
     "require": {
         "php": ">=5.5.9",
         "symfony/framework-bundle": "~2.8|~3.0",
-        "victoire/victoire": "~1.5",
-        "friendsofvictoire/button-widget": "1.5.x-dev"
+        "victoire/victoire": "~2.0",
+        "friendsofvictoire/button-widget": "~2.0"
     },
     "autoload": {
         "psr-0": {
             "Victoire\\Widget\\AlertButtonBundle": ""
         }
     },
-    "minimum-stability": "dev",
-    "target-dir": "Victoire/Widget/AlertButtonBundle",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.5.x-dev"
-        }
-    }
+    "target-dir": "Victoire/Widget/AlertButtonBundle"
 }
