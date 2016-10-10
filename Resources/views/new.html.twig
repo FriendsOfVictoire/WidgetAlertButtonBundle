@@ -1,10 +1,11 @@
 {% extends 'VictoireCoreBundle:Widget:new.html.twig' %}
 
-{% block form %}
+{% block form_static %}
+{{ form_start(form) }}
 {{ parent() }}
 <script type="text/javascript">
     $vic(document).ready(function(){
         initRedactor('.redactor');
     });
 </script>
-{% endblock form %}
+{% endblock form_static %}
